@@ -1,13 +1,10 @@
 import "./App.css";
-import Button from "./components/Button";
-import Input from "./components/Input";
+import Style from "./components/Style";
 
 function App() {
   return (
     <div className="App">
-      <Button handleClick={(event, id) => console.log(`cliked ${id}`, event)} />
-
-      <Input value="" handleChange={(event) => console.log(event)} />
+      <Style style={{ border: "1px solid yellow",backgroundColor:"red" }}/>
     </div>
   );
 }
